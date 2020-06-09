@@ -12,6 +12,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 sh 'mvn clean test'
+                sh mvn 'clean test -Dtest=JavaBasicBootIT'
             }
         }
     }
