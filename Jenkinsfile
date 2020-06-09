@@ -5,9 +5,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'mvn clean compile' 
             }
         }
-        stage('Test') {
+        stage('Intregration Test') {
             steps {
                 echo 'Testing..'
             }
