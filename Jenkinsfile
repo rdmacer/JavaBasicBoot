@@ -11,7 +11,8 @@ pipeline {
         stage('Intregration Test') {
             steps {
                 echo 'Testing..'
-                sh 'mvn clean test -Dtest=JavaBasicBoot'
+                sh 'mvn clean test'
+                //sh 'mvn clean test -Dtest=JavaBasicBoot'
                 //sh 'mvn clean test -Dtest=JavaBasicBoot#test_Libro1'
                 //sh 'mvn clean test -Dtest=JavaBasicBoot#test_Libro2'
             }

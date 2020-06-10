@@ -6,7 +6,12 @@
 
     <groupId>org.example</groupId>
     <artifactId>JavaBasicSpringBoot</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>ModuloBiblioteca</module>
+        <module>ModuloVideoteca</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
