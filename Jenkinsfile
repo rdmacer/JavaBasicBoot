@@ -20,10 +20,10 @@ pipeline {
         stage('Jacoco Report') {
             steps {
                 jacoco(
-                      execPattern: 'target/*.exec',
-                      classPattern: 'target/classes',
-                      sourcePattern: 'src/main/Java',
-                      exclusionPattern: 'src/test*'
+                      //execPattern: 'target/*.exec',
+                      //classPattern: 'target/classes',
+                      //sourcePattern: 'src/main/Java',
+                      //exclusionPattern: 'src/test*'
                 )
             }
         }
