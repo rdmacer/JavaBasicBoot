@@ -15,5 +15,15 @@ pipeline {
                 sh 'mvn clean test -Dtest=JavaBasicBoot#test_1'
             }
         }
+        stage('Jacoco Report') {
+            steps {
+                jacoco(
+                      execPattern: 'target/*.exec',
+                      classPattern: 'target/classes',
+                      sourcePattern: 'src/main/Java',
+                      exclusionPattern: 'src/test*'
+                )
+            }
+        }
     }
 }
